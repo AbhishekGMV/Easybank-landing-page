@@ -1,0 +1,43 @@
+@keyframes fade-in {
+  from {
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  //Note: Display property cannot be animated
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+//helper-class
+.fade-in {
+  animation: fade-in 500ms ease-in-out forwards;
+}
+.fade-out {
+  animation: fade-out 500ms ease-in-out forwards;
+}
+
+.has-fade {
+  visibility: hidden;
+}

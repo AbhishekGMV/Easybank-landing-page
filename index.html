@@ -21,7 +21,37 @@
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
-    <!-- Home About Contact Blog Careers Request Invite Next generation digital
+    <header class="header">
+      <div class="overlay"></div>
+      <nav class="container flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">
+          <img src="/images/logo.svg" alt="Easybank" />
+        </a>
+        <a href="#" class="header__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="header__links hide-for-mobile">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contacts</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+        <a class="button header__cta hide-for-mobile" type="button"
+          >Request Invite</a
+        >
+      </nav>
+      <div class="container has-fade header__menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contacts</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+    </header>
+    Home About Contact Blog Careers Request Invite Next generation digital
     banking Take your financial life online. Your Easybank account will be a
     one-stop-shop for spending, saving, budgeting, investing, and much more.
     Request Invite Why choose Easybank? We leverage Open Banking to turn your
@@ -51,29 +81,7 @@
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
-    <header class="header">
-      <nav class="flex flex-jc-sb flex-ai-c">
-        <a href="/" class="header__logo">
-          <img src="/images/logo.svg" alt="Easybank" />
-        </a>
-        <a href="#" class="header__menu hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-        <div class="header__links hide-for-mobile">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contacts</a>
-          <a href="#">Blog</a>
-          <a href="#">Careers</a>
-        </div>
-        <a class="button header__cta hide-for-mobile" type="button"
-          >Request Invite</a
-        >
-      </nav>
-    </header>
+    </div>
     <script src="app/js/script.js"></script>
   </body>
 </html>
