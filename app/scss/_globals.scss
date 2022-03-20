@@ -20,6 +20,10 @@ body {
   font-size: 1.125rem;
   color: $grayishBlue;
   line-height: 1.3;
+
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 a,

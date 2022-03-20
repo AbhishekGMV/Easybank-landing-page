@@ -17,6 +17,9 @@ body {
   color: #9698a6;
   line-height: 1.3;
 }
+body.noscroll {
+  overflow: hidden;
+}
 
 a,
 a:visited,
@@ -92,11 +95,11 @@ button,
   }
 }
 .fade-in {
-  animation: fade-in 500ms ease-in-out forwards;
+  animation: fade-in 200ms ease-in-out forwards;
 }
 
 .fade-out {
-  animation: fade-out 500ms ease-in-out forwards;
+  animation: fade-out 200ms ease-in-out forwards;
 }
 
 .has-fade {
@@ -104,6 +107,8 @@ button,
 }
 
 .header nav {
+  position: relative;
+  background-color: white;
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
 }
@@ -182,7 +187,7 @@ button,
 .overlay {
   opacity: 0;
   position: fixed;
-  top: 3.765rem;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
