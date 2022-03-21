@@ -15,6 +15,37 @@
 }
 
 .container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  max-width: 69.375rem;
+  margin: 0 auto;
+
+  &--pall {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  &--px {
+    //padding in x-axis
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  &--py {
+    //padding in y-axis
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  &--pt {
+    padding-top: 2.25rem;
+  }
+  &--pr {
+    padding-right: 1.5rem;
+  }
+  &--pb {
+    padding-bottom: 2.25rem;
+  }
+  &--pl {
+    padding-left: 1.5rem;
+  }
 }

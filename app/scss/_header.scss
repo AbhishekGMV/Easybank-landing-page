@@ -8,6 +8,7 @@
     background-color: white;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
+    z-index: 1;
   }
 
   &.open {
@@ -55,6 +56,7 @@
     border-radius: 5px;
     position: absolute;
     width: calc(100% - 3rem);
+    z-index: 1;
   }
   &__menu a {
     padding: 0.625rem;
@@ -92,14 +94,6 @@
           opacity: 1;
         }
       }
-    }
-  }
-
-  &__cta {
-    font-size: $font-sm;
-    color: $white;
-    &:hover {
-      opacity: 0.75;
     }
   }
 }
