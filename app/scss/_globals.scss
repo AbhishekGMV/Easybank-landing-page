@@ -19,6 +19,33 @@ h1,
 h2,
 h3 {
   margin-top: 0;
+  font-weight: 300;
+  color: $darkBlue;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: $font-lg;
+  margin-bottom: 1.5rem;
+  @include breakpoint-up(large) {
+    font-size: $font-xlg;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+
+  @include breakpoint-up(large) {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+  font-size: 2.25rem;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 
 body {
