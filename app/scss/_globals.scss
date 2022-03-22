@@ -12,6 +12,8 @@ html {
 *,
 *::after,
 *::before {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 
@@ -55,6 +57,7 @@ body {
   font-size: 1.125rem;
   color: $grayishBlue;
   line-height: 1.3;
+  overflow-x: hidden;
   &.noscroll {
     overflow: hidden;
   }
