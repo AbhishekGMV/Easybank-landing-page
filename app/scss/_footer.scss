@@ -1,0 +1,112 @@
+@use "colors" as *;
+@use "mixins" as *;
+
+.footer {
+  background-color: $darkBlue;
+  color: $white;
+  padding: 2.5rem;
+  text-align: center;
+
+  a {
+    color: $white;
+    line-height: 2.25;
+    &:hover {
+      transition: color 150ms ease-in-out;
+      color: $limeGreen;
+    }
+  }
+
+  .container {
+    @include breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 3fr;
+      gap: 1rem;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "logo links1 links2 cta"
+        "social links1 links2 cta";
+      justify-items: start;
+    }
+  }
+
+  .attribution {
+    margin-top: 4rem;
+    font-size: 0.875rem;
+  }
+
+  &__logo {
+    display: inline-block;
+    @include breakpoint-down(medium) {
+      margin-bottom: 1.875rem;
+    }
+
+    @include breakpoint-up(large) {
+      grid-area: logo; //value does not have to be a string
+    }
+  }
+
+  &__social {
+    margin-bottom: 1.875rem;
+
+    a {
+      display: inline-block;
+
+      svg path {
+        transition: fill 150ms ease-in-out;
+      }
+
+      &:hover svg path {
+        fill: $limeGreen;
+      }
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    @include breakpoint-up(large) {
+      grid-area: social;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+    font-size: 0.9375rem;
+    @include breakpoint-up(large) {
+      align-items: start;
+    }
+
+    &.col1 {
+      @include breakpoint-up(large) {
+        grid-area: links1;
+      }
+    }
+
+    &.col2 {
+      margin-bottom: 1.875rem;
+      @include breakpoint-up(large) {
+        grid-area: links2;
+      }
+    }
+  }
+
+  &__cta {
+    font-size: 0.9375rem;
+
+    .button {
+      margin-bottom: 1.875rem;
+    }
+    @include breakpoint-up(large) {
+      grid-area: cta;
+      text-align: right;
+      justify-self: end;
+    }
+  }
+
+  &__copywrite {
+    font-size: 0.8125rem;
+    color: #9698a6;
+  }
+}
