@@ -40,10 +40,10 @@
 
   &__title {
     font-size: 1.25rem;
-    margin-bottom: 1.5;
+    margin-bottom: 1.5rem;
     @include breakpoint-up(large) {
       font-size: 1.5rem;
-      margin-bottom: 1.125;
+      margin-bottom: 1.125rem;
     }
   }
   &__description {

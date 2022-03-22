@@ -408,12 +408,12 @@ button:hover,
 }
 .feature__title {
   font-size: 1.25rem;
-  margin-bottom: 1.5;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 64em) {
   .feature__title {
     font-size: 1.5rem;
-    margin-bottom: 1.125;
+    margin-bottom: 1.125rem;
   }
 }
 .feature__description {
