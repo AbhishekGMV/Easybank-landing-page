@@ -11,6 +11,16 @@
     z-index: 1;
   }
 
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient($darkBlue, transparent);
+  }
+
   &.open {
     .header__toggle {
       > span:first-child {
@@ -96,14 +106,4 @@
       }
     }
   }
-}
-
-.overlay {
-  opacity: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient($darkBlue, transparent);
 }
