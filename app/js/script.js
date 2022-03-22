@@ -2,7 +2,7 @@ const burgerMenu= document.querySelector(".header__toggle");
 const headerMenu =document.querySelector(".header__menu");
 const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
-const fadeItem = document.querySelector(".has-fade");
+const fadeElems = document.querySelectorAll(".has-fade");
 const body = document.querySelector('body');
 
 
@@ -12,7 +12,10 @@ burgerMenu.addEventListener("click", () => {
 
         body.classList.remove("noscroll");
         //mobile menu
-        fadeItem.classList.add("has-fade");
+        fadeElems.forEach(function(element){
+            element.classList.remove('fade-in');
+            element.classList.add('fade-out');
+          });
 
         //overlay
         overlay.classList.remove("fade-in");
@@ -20,8 +23,9 @@ burgerMenu.addEventListener("click", () => {
     } else {
         header.classList.add("open");
         body.classList.add("noscroll");
-        fadeItem.classList.remove("has-fade");
-        overlay.classList.remove("fade-out");
-        overlay.classList.add("fade-in");
+        fadeElems.forEach(function(element){
+            element.classList.remove('fade-out');
+            element.classList.add('fade-in');
+        });
     }
 });
