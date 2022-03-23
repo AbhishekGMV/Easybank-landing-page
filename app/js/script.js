@@ -36,3 +36,11 @@ const openModal = () => {
     element.classList.add("fade-in");
   });
 };
+
+const handleWindowResize = () => {
+  if (window.innerWidth > 1023) {
+    closeModal();
+  }
+};
+
+window.onresize = handleWindowResize;
