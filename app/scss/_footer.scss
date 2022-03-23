@@ -97,6 +97,9 @@
 
     .button {
       margin-bottom: 1.875rem;
+      &:hover {
+        color: white;
+      }
     }
     @include breakpoint-up(large) {
       grid-area: cta;
