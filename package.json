@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo Build step not yet implemented"
+    "build": "echo exit 0"
   },
   "keywords": [],
   "author": "",
