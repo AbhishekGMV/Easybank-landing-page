@@ -4,6 +4,8 @@ const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
 const fadeElems = document.querySelectorAll(".has-fade");
 const body = document.querySelector("body");
+const themeBtn = document.getElementById("toggle-theme");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 burgerMenu.addEventListener("click", () => {
   if (header.classList.contains("open")) {

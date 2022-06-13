@@ -591,4 +591,70 @@ button:hover,
   color: #9698a6;
 }
 
+@media (prefers-color-scheme: dark) {
+  img {
+    filter: brightness(0.8) contrast(1.2);
+  }
+
+  .header {
+    background-color: black;
+  }
+  .header .container {
+    background-color: black;
+    color: white;
+  }
+  .header img {
+    content: url("/images/logo-dark.svg");
+  }
+  .header__toggle > span {
+    background-color: white !important;
+  }
+  .header a {
+    color: white !important;
+  }
+
+  .hero {
+    background-color: black;
+    color: white;
+  }
+  .hero h1 {
+    color: #2eb985;
+  }
+
+  .feature {
+    background-color: #121212 !important;
+    color: white;
+  }
+  .feature h2,
+.feature h3 {
+    color: #30c88c;
+  }
+
+  .articles {
+    background-color: black !important;
+    color: white;
+  }
+  .articles h2,
+.articles h3 {
+    color: #30c88c;
+  }
+
+  .article__text {
+    background-color: #121212;
+  }
+  .article__title {
+    color: #30c88c !important;
+  }
+  .article__description {
+    color: white !important;
+  }
+  .article__item {
+    background-color: black !important;
+  }
+
+  .footer {
+    background-color: #0f0f11 !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
