@@ -1,4 +1,26 @@
+@use "colors" as *;
+
 $font-sm: 0.875rem;
 $font-md: 1.125rem;
 $font-lg: 2.31rem;
 $font-xlg: 3.25rem;
+.dark {
+    --clr-background: black;
+    --clr-foreground: white;
+    --clr-section: hsl(240, 6%, 6%);
+    --clr-section-2: black;
+    --clr-theme: $limeGreen;
+    --logo-url: url("/images/logo-dark.svg");
+    --clr-header: hsl(156, 61%, 49%);
+    --clr-links: $white;
+    --clr-card: #1f1f1f;
+    --clr-title: hsl(136, 65%, 51%);
+    --clr-text: white;
+    --clr-footer: hsl(240, 6%, 6%);
+}
+// $clr-background: red !important;
+// $clr-foreground: $black;
+// $clr-section: $matteBlack;
+// $clr-theme: $limeGreen;
+// $clr-section-2: $matteBlack2;
+// $logo-url: url("/images/logo-dark.png");

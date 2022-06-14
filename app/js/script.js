@@ -7,6 +7,14 @@ const body = document.querySelector("body");
 const themeBtn = document.getElementById("toggle-theme");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
+if (prefersDarkScheme.matches) {
+  body.classList.add("dark");
+}
+
+themeBtn.addEventListener("click", () => {
+  body.classList.toggle("dark");
+});
+
 burgerMenu.addEventListener("click", () => {
   if (header.classList.contains("open")) {
     closeModal();

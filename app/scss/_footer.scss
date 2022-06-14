@@ -2,7 +2,7 @@
 @use "mixins" as *;
 
 .footer {
-  background-color: $darkBlue;
+  background-color: var(--clr-footer);
   color: $white;
   padding: 2.5rem;
   text-align: center;

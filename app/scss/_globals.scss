@@ -4,6 +4,21 @@
 @use "_hero" as *;
 @use "variables" as *;
 
+:root {
+  --clr-background: white;
+  --clr-foreground: black;
+  --clr-section: hsl(0, 0%, 98%);
+  --clr-section-2: hsl(0, 0%, 98%);
+  --clr-theme: $limeGreen;
+  --clr-header: hsl(233, 26%, 24%);
+  --logo-url: url("/images/logo.svg");
+  --clr-links: $grayishBlue;
+  --clr-card: white;
+  --clr-title: hsl(233, 26%, 24%);
+  --clr-text: hsl(233, 8%, 62%);
+  --clr-footer: hsl(233, 26%, 24%);
+}
+
 html {
   font-size: 100%; //more accessible for zoom levels
   box-sizing: border-box;
@@ -22,7 +37,7 @@ h2,
 h3 {
   margin-top: 0;
   font-weight: 300;
-  color: $darkBlue;
+  color: var(--clr-header);
   line-height: 1.15;
 }
 

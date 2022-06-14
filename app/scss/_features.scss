@@ -2,7 +2,8 @@
 @use "colors" as *;
 
 .feature {
-  background-color: $lightGrayishBlue;
+  background-color: var(--clr-section);
+  color: var(--clr-text);
   text-align: center;
   @include breakpoint-up(medium) {
     text-align: left;

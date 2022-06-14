@@ -26,13 +26,9 @@
       <div class="overlay has-fade"></div>
       <nav class="container container--pall flex flex-jc-sb flex-ai-c">
         <a href="/" class="header__logo">
-          <img src="/images/logo.svg" alt="logo" />
+          <img alt="logo" />
         </a>
-        <a href="#" class="header__toggle hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
+
         <div class="header__links hide-for-mobile">
           <a href="#">Home</a>
           <a href="#">About</a>
@@ -40,9 +36,29 @@
           <a href="#">Blog</a>
           <a href="#">Careers</a>
         </div>
-        <a class="button header__cta hide-for-mobile" type="button">
-          Request Invite
-        </a>
+        <div>
+          <a class="button header__cta hide-for-mobile" type="button">
+            Request Invite
+          </a>
+          <button title="Toggle theme" id="toggle-theme">
+            <svg
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 496 496"
+            >
+              <path
+                fill="currentColor"
+                d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                transform="translate(-8 -8)"
+              />
+            </svg>
+          </button>
+          <a href="#" class="header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
       </nav>
       <div class="header__menu has-fade container">
         <a href="#">Home</a>

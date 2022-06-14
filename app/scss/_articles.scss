@@ -2,13 +2,10 @@
 @use "mixins" as *;
 
 .articles {
-  background-color: $veryLightGray;
+  background-color: var(--clr-section-2);
 }
 
 .article {
-  &__content {
-  }
-
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -23,7 +20,7 @@
   }
 
   &__item {
-    background-color: $white;
+    background-color: var(--clr-card);
     border-radius: 0.3125rem;
     overflow: hidden; //doubt -> for rounded borders to show-up
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
@@ -54,7 +51,7 @@
 
   &__title {
     font-size: 1.0625rem;
-    color: $darkBlue;
+    color: var(--clr-title);
     margin-bottom: 0.5rem;
     line-height: 1.2;
     font-weight: 300;
@@ -62,5 +59,6 @@
 
   &__description {
     font-size: 0.825rem;
+    color: var(--clr-text);
   }
 }

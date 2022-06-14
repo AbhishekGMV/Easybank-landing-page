@@ -1,14 +1,37 @@
 @use "colors" as *;
 @use "variables" as *;
 @use "animations";
+@use "mixins" as *;
 
 .header {
   position: relative;
   z-index: 1;
+  background-color: var(--clr-background);
+
+  #toggle-theme{
+    position: absolute;
+    z-index: 100;
+    top: 1.4em;
+    right: 8em;
+    color: var(--clr-foreground);
+    border: 2px solid currentColor;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 25px;
+    height: 26px;
+
+    @include breakpoint-up(large) {
+        top: 2em;
+        right: 15em;
+      }
+  }
 
   nav {
     position: relative;
-    background-color: white;
+    background-color: var(--clr-background);
+    color: var(--clr-foreground);
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
   }
@@ -41,6 +64,7 @@
 
   &__logo {
     img {
+      content: var(--logo-url);
       width: 8.8125rem;
       height: 1.375rem;
     }
@@ -51,7 +75,7 @@
       display: block;
       width: 24px;
       height: 2px;
-      background-color: $darkBlue;
+      background-color: var(--clr-foreground);
       transform-origin: 7px 1px;
       transition: all 300ms ease-in-out;
 
@@ -62,7 +86,7 @@
   }
 
   &__menu {
-    background-color: $white;
+    background-color: var(--clr-background);
     margin: 1.5rem;
     padding: 1.625rem;
     border-radius: 5px;
@@ -72,7 +96,7 @@
   }
   &__menu a {
     padding: 0.625rem;
-    color: $darkBlue;
+    color: var(--clr-links);
     display: block;
     text-align: center;
   }
@@ -80,7 +104,7 @@
   &__links {
     a {
       font-size: $font-sm;
-      color: $grayishBlue;
+      color: var(--clr-links);
       transition: color 300ms;
       position: relative;
       &:not(:last-child) {
